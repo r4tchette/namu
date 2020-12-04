@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+	<meta charset="UTF-8">
+
+	<title>test10_test.html</title>
+
+	<script>
+
+		var showSum = function(){
+
+			var num1 = document.getElementsByTagName("input")[0].value;
+
+			var num2 = document.getElementsByTagName("input")[1].value;
+
+			var result = parseInt(num1) + parseInt(num2);
+
+			document.getElementsByTagName("input")[2].value=result;
+
+		}
+
+	</script>
+
+</head>
+
+<body>
+
+	<input type="text"/>	
+
+	+
+
+	<input type="text"/>
+
+	<button onclick="showSum()">=</button>
+
+	<input type="text"/>
+
+</body>
+
+</html>
+
+
+
+출처: https://sweetdolphin.tistory.com/entry/javascript-간단한-덧셈연산 [코딩하는돌고래]
