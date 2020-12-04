@@ -4,10 +4,10 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>test10_test.html</title>
+	<title>namu.html</title>
 	<script>
 		var calc = function(){
-            var PI = 3.14159265358979323846;
+			var PI = 3.14159265358979323846;
 			var d0 = parseFloat(document.getElementsByTagName("input")[0].value);
 			var di = parseFloat(document.getElementsByTagName("input")[1].value);
 			var d = parseFloat(document.getElementsByTagName("input")[2].value);
@@ -18,26 +18,26 @@
 			var E2 = parseFloat(document.getElementsByTagName("input")[7].value);
 			var E3 = parseFloat(document.getElementsByTagName("input")[8].value);
 			var Pc = parseFloat(document.getElementsByTagName("input")[9].value);
-            
+
             var f1 = (4 * L1) / (PI * (d0 * d0 - di * di) * E1);
             var f2 = (4 * L2) / (PI * (d * d) * E2);
             var f3 = (4 * L3) / (PI * (d * d) * E3);
-            
+
             var F2 = f3 / (f1 + f2 + f3) * Pc;
             var F1 = F2;
             var F3 = F2 - Pc;
-            
-            var A1 = (Pi / 4) * ((d0 * d0) - (di * di));
-            var A2 = (Pi / 4) * ((d * d));
+
+            var A1 = (PI / 4) * ((d0 * d0) - (di * di));
+            var A2 = (PI / 4) * ((d * d));
             var A3 = A2;
-            
-            s1 = F1 / A1;
-	        s2 = F2 / A2;
-	        s3 = F3 / A3;
-            
+
+            var s1 = F1 / A1;
+	        var s2 = F2 / A2;
+	        var s3 = F3 / A3;
+
             var Ub = f1 * F1;
             var Uc = (-1) * f3 * F3;
-            
+
 			document.getElementsByTagName("input")[10].value = s1;
 			document.getElementsByTagName("input")[11].value = s2;
 			document.getElementsByTagName("input")[12].value = s3;
@@ -48,24 +48,28 @@
 </head>
 
 <body>
-	<input type="text"/>
-	<input type="text"/>
-	<input type="text"/>
-	<input type="text"/>    
-	<input type="text"/>
-	<input type="text"/>
-	<input type="text"/>
-	<input type="text"/>
-	<input type="text"/>
-	<input type="text"/>
+	<h1>NAMU</h1>
+	<pre>
+d0 : <input type="text"/>
+di : <input type="text"/>
+d  : <input type="text"/>
+L1 : <input type="text"/>
+L2 : <input type="text"/>
+L3 : <input type="text"/>
+E1 : <input type="text"/>
+E2 : <input type="text"/>
+E3 : <input type="text"/>
+Pc : <input type="text"/>
 
-	<button onclick="calc()">=</button>
+<button onclick="calc()">calculate</button>
 
-	<input type="text"/>
-	<input type="text"/>
-	<input type="text"/>
-	<input type="text"/>
-	<input type="text"/>
+s1 : <input type="text"/>
+s2 : <input type="text"/>
+s3 : <input type="text"/>
+Ub : <input type="text"/>
+Uc : <input type="text"/>
+	</pre>
+
 
 </body>
 </html>
