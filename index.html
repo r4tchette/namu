@@ -3,10 +3,13 @@
 <html lang="ko">
 <head>
 	<meta charset="UTF-8">
-	<title>과제하는 나무를 위한 계산기</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<title>과제하는 나무를 위한 페이지</title>
 	<script>
 		var calc = function(){
 			var PI = 3.14159265358979323846;
+
 			var d0 = parseFloat(document.getElementsByTagName("input")[0].value);
 			var di = parseFloat(document.getElementsByTagName("input")[1].value);
 			var d = parseFloat(document.getElementsByTagName("input")[2].value);
@@ -44,30 +47,152 @@
 			document.getElementsByTagName("input")[14].value = Uc;
 		}
 	</script>
+	<style>
+		.border {
+			padding: 10px;
+		}
+	</style>
 </head>
 
 <body>
-<div class = "layer">
-<h1>NAMU</h1>
-<pre>
-d0 : <input type="text"/>
-di : <input type="text"/>
-d  : <input type="text"/>
-L1 : <input type="text"/>
-L2 : <input type="text"/>
-L3 : <input type="text"/>
-E1 : <input type="text"/>
-E2 : <input type="text"/>
-E3 : <input type="text"/>
-Pc : <input type="text"/>
-<button onclick="calc()">calculate</button>
-s1 : <input type="text"/>
-s2 : <input type="text"/>
-s3 : <input type="text"/>
-Ub : <input type="text"/>
-Uc : <input type="text"/>
-</pre>
-</div>
+	<div class="border">
+		<div class="row">
+			<div class="col-md-12 col-xs-12">
+				<h1>FOR NAMU</h1>
+			</div>
+			<div class="col-md-12 col-xs-12">
+				<h4>INPUT</h4>
+			</div>
+			<div class="col-md-4 col-xs-12">
+				<div class="input-group mb-3">
+					<div class="input-group-prepend">
+						<span class="input-group-text" id="d0">d0</span>
+					</div>
+					<input type="text" class="form-control" placeholder="d0" aria-label="d0" aria-describedby="d0">
+				</div>
+			</div>
+			<div class="col-md-4 col-xs-12">
+				<div class="input-group mb-3">
+					<div class="input-group-prepend">
+						<span class="input-group-text" id="di">di</span>
+					</div>
+					<input type="text" class="form-control" placeholder="di" aria-label="di" aria-describedby="di">
+				</div>
+			</div>
+			<div class="col-md-4 col-xs-12">
+				<div class="input-group mb-3">
+					<div class="input-group-prepend">
+						<span class="input-group-text" id="d0">d</span>
+					</div>
+					<input type="text" class="form-control" placeholder="d" aria-label="d" aria-describedby="d">
+				</div>
+			</div>
+			<div class="col-md-4 col-xs-12">
+				<div class="input-group mb-3">
+					<div class="input-group-prepend">
+						<span class="input-group-text" id="L1">L1</span>
+					</div>
+					<input type="text" class="form-control" placeholder="L1" aria-label="L1" aria-describedby="L1">
+				</div>
+			</div>
+			<div class="col-md-4 col-xs-12">
+				<div class="input-group mb-3">
+					<div class="input-group-prepend">
+						<span class="input-group-text" id="L2">L2</span>
+					</div>
+					<input type="text" class="form-control" placeholder="L2" aria-label="L2" aria-describedby="L2">
+				</div>
+			</div>
+			<div class="col-md-4 col-xs-12">
+				<div class="input-group mb-3">
+					<div class="input-group-prepend">
+						<span class="input-group-text" id="L3">L3</span>
+					</div>
+					<input type="text" class="form-control" placeholder="L3" aria-label="L3" aria-describedby="L3">
+				</div>
+			</div>
+			<div class="col-md-4 col-xs-12">
+				<div class="input-group mb-3">
+					<div class="input-group-prepend">
+						<span class="input-group-text" id="E1">E1</span>
+					</div>
+					<input type="text" class="form-control" placeholder="E1" aria-label="E1" aria-describedby="E1">
+				</div>
+			</div>
+			<div class="col-md-4 col-xs-12">
+				<div class="input-group mb-3">
+					<div class="input-group-prepend">
+						<span class="input-group-text" id="E2">E2</span>
+					</div>
+					<input type="text" class="form-control" placeholder="E2" aria-label="E2" aria-describedby="E2">
+				</div>
+			</div>
+			<div class="col-md-4 col-xs-12">
+				<div class="input-group mb-3">
+					<div class="input-group-prepend">
+						<span class="input-group-text" id="E3">E3</span>
+					</div>
+					<input type="text" class="form-control" placeholder="E3" aria-label="E3" aria-describedby="E3">
+				</div>
+			</div>
+			<div class="col-md-4 col-xs-12">
+				<div class="input-group mb-3">
+					<div class="input-group-prepend">
+						<span class="input-group-text" id="Pc">Pc</span>
+					</div>
+					<input type="text" class="form-control" placeholder="Pc" aria-label="Pc" aria-describedby="Pc">
+				</div>
+			</div>
 
+			<div class="col-md-12 col-xs-12">
+				<div class="text-center">
+					<button class="btn btn-outline-secondary" type="button" onclick="calc()">calculate</button>
+				</div>
+			</div>
+			<div class="col-md-12 col-xs-12">
+				<h4>OUTPUT</h4>
+			</div>
+			<div class="col-md-4 col-xs-12">
+				<div class="input-group mb-3">
+					<div class="input-group-prepend">
+						<span class="input-group-text" id="s1">s1</span>
+					</div>
+					<input type="text" readonly class="form-control" placeholder="s1" aria-label="s1" aria-describedby="s1">
+				</div>
+			</div>
+			<div class="col-md-4 col-xs-12">
+				<div class="input-group mb-3">
+					<div class="input-group-prepend">
+						<span class="input-group-text" id="s2">s2</span>
+					</div>
+					<input type="text" readonly class="form-control" placeholder="s2" aria-label="s2" aria-describedby="s2">
+				</div>
+			</div>
+			<div class="col-md-4 col-xs-12">
+				<div class="input-group mb-3">
+					<div class="input-group-prepend">
+						<span class="input-group-text" id="s3">s3</span>
+					</div>
+					<input type="text" readonly class="form-control" placeholder="s3" aria-label="s3" aria-describedby="s3">
+				</div>
+			</div>
+			<div class="col-md-4 col-xs-12">
+				<div class="input-group mb-3">
+					<div class="input-group-prepend">
+						<span class="input-group-text" id="Ub">Ub</span>
+					</div>
+					<input type="text" readonly class="form-control" placeholder="Ub" aria-label="Ub" aria-describedby="Ub">
+				</div>
+			</div>
+			<div class="col-md-4 col-xs-12">
+				<div class="input-group mb-3">
+					<div class="input-group-prepend">
+						<span class="input-group-text" id="Uc">Uc</span>
+					</div>
+					<input type="text" readonly class="form-control" placeholder="Uc" aria-label="Uc" aria-describedby="Uc">
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
