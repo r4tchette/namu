@@ -48,8 +48,31 @@
 		}
 	</script>
 	<style>
-		.border {
+		.border
+		{
 			padding: 10px;
+			background-color: #519D9E;
+		}
+		.input-group-text
+		{
+			background-color: #58C9B9;
+			border: none;
+		}
+		.form-control
+		{
+			background-color: #9DC8C8;
+			border: none;
+		}
+		.form-control:read-only
+		{
+			background-color: #9DC8C8;
+			border: none;
+		}
+		.btn
+		{
+			background-color: #D1B6E1;
+			border: none;
+			color: white;
 		}
 	</style>
 </head>
@@ -61,7 +84,7 @@
 				<h1>FOR NAMU</h1>
 			</div>
 			<div class="col-md-12 col-xs-12">
-				<h4>INPUT</h4>
+				<h4>INPUT <small>please input your variables</small></h4>
 			</div>
 			<div class="col-md-4 col-xs-12">
 				<div class="input-group mb-3">
@@ -146,11 +169,11 @@
 
 			<div class="col-md-12 col-xs-12">
 				<div class="text-center">
-					<button class="btn btn-outline-secondary" type="button" onclick="calc()">calculate</button>
+					<button class="btn btn-secondary btn-lg" type="button" onclick="calc()">calculate</button>
 				</div>
 			</div>
 			<div class="col-md-12 col-xs-12">
-				<h4>OUTPUT</h4>
+				<h4>OUTPUT <small>the result is just readonly</small></h4>
 			</div>
 			<div class="col-md-4 col-xs-12">
 				<div class="input-group mb-3">
